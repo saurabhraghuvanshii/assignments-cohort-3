@@ -1,9 +1,19 @@
 const { Router } = require("express");
+<<<<<<< HEAD
 const { User } = require("../database/index")
 const jwt = require("jsonwebtoken");
 const { JWT_USER } = require("../config")
 const { userMiddleware } = require("../middleware/user");
 const userRouter = Router();
+||||||| parent of c556ad3 (week4 assgnment done but not hard one)
+const router = Router();
+const userMiddleware = require("../middleware/user");
+
+=======
+const userRouter = Router();
+const { userMiddleware } = require("../middleware/user");
+const { User, Todo } = require("../database/index")
+>>>>>>> c556ad3 (week4 assgnment done but not hard one)
 // User Routes
 userRouter.post('/signup', (req, res) => {
     // Implement user signup logic
@@ -23,6 +33,7 @@ userRouter.post('/signup', (req, res) => {
     })
 });
 
+<<<<<<< HEAD
 userRouter.post('/login', async function (req, res) {
     // Implement user login logic
     const { email, password } = req.body;
@@ -52,6 +63,13 @@ userRouter.post('/login', async function (req, res) {
         message: "you are signin"
     })
 
+||||||| parent of c556ad3 (week4 assgnment done but not hard one)
+router.post('/login', (req, res) => {
+     // Implement user login logic
+=======
+userRouter.post('/login', (req, res) => {
+    // Implement user login logic
+>>>>>>> c556ad3 (week4 assgnment done but not hard one)
 });
 
 userRouter.get('/todos', userMiddleware, (req, res) => {

@@ -1,5 +1,17 @@
 const mongoose = require('mongoose');
+<<<<<<< HEAD
 
+||||||| parent of c556ad3 (week4 assgnment done but not hard one)
+
+// Connect to MongoDB
+mongoose.connect('your-mongodb-url');
+
+=======
+//dotenv.config();
+// Connect to MongoDB
+//await mongoose.connect(process.env.moongose_url);
+
+>>>>>>> c556ad3 (week4 assgnment done but not hard one)
 // Define schemas
 
 const UserSchema = new mongoose.Schema({
