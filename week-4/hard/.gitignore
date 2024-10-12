@@ -1,5 +1,11 @@
 
 node_modules
+<<<<<<< HEAD
 .env
 
 
+||||||| parent of ad020ca (week 4 hard not done)
+.env
+=======
+.env 
+>>>>>>> ad020ca (week 4 hard not done)
