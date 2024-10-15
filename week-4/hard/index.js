@@ -13,6 +13,14 @@ dotenv.config();
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+||||||| parent of 0602141 (complete login)
+
+
+
+=======
+
+>>>>>>> 0602141 (complete login)
 const UserRouter = require('./routes/user');
 const todoRouter = require('./routes/todo');
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)

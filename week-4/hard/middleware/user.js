@@ -6,8 +6,7 @@ const { JWT_USER, JWT_ADMIN } = require('../config');
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
 =======
 const jwt = require('jsonwebtoken')
-const { JWT_sceret , JWT_sceretA } = require("../config")
-
+const { JWT_USER , JWT_ADMIN } = require("../config")
 
 
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
@@ -32,7 +31,7 @@ function userMiddleware(req, res, next) {
 =======
     
     const token = req.headers.token
-    const decoded = jwt.verify(token, JWT_sceret)
+    const decoded = jwt.verify(token, JWT_USER)
 
     if(decoded) {
         req.userId = decoded.id;
@@ -71,7 +70,7 @@ module.exports = userMiddleware;
 =======
 function adminMiddleware(req, res, next) {
     const token = req.headers.token
-    const decoded = jwt.verify(token, JWT_sceretA);
+    const decoded = jwt.verify(token, JWT_ADMIN);
 
     if (decoded) {
         req.adminId = decoded.id;

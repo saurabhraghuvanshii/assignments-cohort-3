@@ -14,5 +14,11 @@ node_modules
 .env 
 =======
 .env 
+<<<<<<< HEAD
 config.js
 >>>>>>> fe9f654 (make user signup possible)
+||||||| parent of 0602141 (complete login)
+config.js
+=======
+
+>>>>>>> 0602141 (complete login)
