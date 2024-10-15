@@ -6,8 +6,12 @@ const { JWT_USER, JWT_ADMIN } = require('../config');
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
 =======
 const jwt = require('jsonwebtoken')
-const { JWT_USER , JWT_ADMIN } = require("../config")
+console.log(require('../config'));
 
+const { JWT_USER, JWT_ADMIN } = require('../config');
+
+console.log("JWT_USER in middleware:", JWT_USER);
+console.log("JWT_ADMIN in middleware:", JWT_ADMIN);
 
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
 function userMiddleware(req, res, next) {

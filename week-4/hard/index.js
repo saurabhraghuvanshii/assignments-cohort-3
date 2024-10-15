@@ -1,5 +1,6 @@
 const express = require("express");
 <<<<<<< HEAD
+<<<<<<< HEAD
 require('dotenv').config()
 const mongoose = require("mongoose")
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
@@ -7,7 +8,13 @@ const dotenv = require("dotenv");
 dotenv.config();
 =======
 const dotenv = require("dotenv");
+||||||| parent of eb9ff86 (check for undefined)
+const dotenv = require("dotenv");
+=======
+require('dotenv').config()
+>>>>>>> eb9ff86 (check for undefined)
 const mongoose = require("mongoose")
+<<<<<<< HEAD
 dotenv.config();
 //console.log(process.env.moongose_url)
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
@@ -15,7 +22,13 @@ dotenv.config();
 <<<<<<< HEAD
 <<<<<<< HEAD
 ||||||| parent of 0602141 (complete login)
+||||||| parent of eb9ff86 (check for undefined)
+dotenv.config();
+//console.log(process.env.moongose_url)
+=======
+>>>>>>> eb9ff86 (check for undefined)
 
+//console.log(process.env.moongose_url)
 
 
 =======
