@@ -20,18 +20,31 @@ const todoRouter = require('./routes/todo');
 
 
 
+<<<<<<< HEAD
 const  { UserRouter } = require('./routes/user');
 const { todoRouter } = require('./routes/todo');
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
+||||||| parent of fe9f654 (make user signup possible)
+const  { UserRouter } = require('./routes/user');
+const { todoRouter } = require('./routes/todo');
+=======
+const UserRouter = require('./routes/user');
+const todoRouter = require('./routes/todo');
+>>>>>>> fe9f654 (make user signup possible)
 const app = express();
 app.use(express.json());
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
 app.get("/healthy", (req, res)=> res.send("I am Healthy"));
 =======
 //app.get("/healthy", (req, res)=> res.send("I am Healthy"));
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
+||||||| parent of fe9f654 (make user signup possible)
+//app.get("/healthy", (req, res)=> res.send("I am Healthy"));
+=======
+>>>>>>> fe9f654 (make user signup possible)
 
 //  start writing your routes here
 app.use("/user", UserRouter);
@@ -51,8 +64,8 @@ main()
 =======
 app.use("/todo", todoRouter);
 
-async function main(){
-    await mongoose.connect(process.env.MONGO_URL)
+async function main() {
+    await mongoose.connect(process.env.moongose_url)
     app.listen(process.env.PORT);
 }
 

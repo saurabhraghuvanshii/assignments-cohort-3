@@ -6,8 +6,8 @@ const { JWT_USER, JWT_ADMIN } = require('../config');
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
 =======
 const jwt = require('jsonwebtoken')
-const JWT_sceret = "saurabhk";
-const JWT_sceretA = "saurabh123"
+const { JWT_sceret , JWT_sceretA } = require("../config")
+
 
 
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)

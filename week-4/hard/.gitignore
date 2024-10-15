@@ -1,6 +1,7 @@
 
 node_modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 .env
 
 
@@ -9,3 +10,9 @@ node_modules
 =======
 .env 
 >>>>>>> ad020ca (week 4 hard not done)
+||||||| parent of fe9f654 (make user signup possible)
+.env 
+=======
+.env 
+config.js
+>>>>>>> fe9f654 (make user signup possible)

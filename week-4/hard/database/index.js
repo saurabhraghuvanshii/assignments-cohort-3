@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
 
@@ -10,6 +11,12 @@ mongoose.connect('your-mongodb-url');
 //dotenv.config();
 // Connect to MongoDB
 //await mongoose.connect(process.env.moongose_url);
+||||||| parent of fe9f654 (make user signup possible)
+//dotenv.config();
+// Connect to MongoDB
+//await mongoose.connect(process.env.moongose_url);
+=======
+>>>>>>> fe9f654 (make user signup possible)
 
 >>>>>>> c556ad3 (week4 assgnment done but not hard one)
 // Define schemas
