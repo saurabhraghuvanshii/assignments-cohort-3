@@ -3,12 +3,17 @@ node_modules
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .env
 ||||||| parent of eb9ff86 (check for undefined)
 .env 
 =======
 
 >>>>>>> eb9ff86 (check for undefined)
+||||||| parent of fe41d16 (resolve all issue)
+=======
+.env
+>>>>>>> fe41d16 (resolve all issue)
 
 
 ||||||| parent of ad020ca (week 4 hard not done)

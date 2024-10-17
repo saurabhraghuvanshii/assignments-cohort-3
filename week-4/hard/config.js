@@ -3,6 +3,7 @@
 require('dotenv').config();
 const JWT_USER = process.env.JWT_USER
 const JWT_ADMIN = process.env.JWT_ADMIN
+<<<<<<< HEAD
 
 
 module.exports = {
@@ -19,6 +20,12 @@ const JWT_USER = process.env.JWT_USER
 const JWT_ADMIN = process.env.JWT_ADMIN
 console.log( JWT_ADMIN);
 console.log("JWT_USER:", JWT_USER);
+||||||| parent of fe41d16 (resolve all issue)
+console.log( JWT_ADMIN);
+console.log("JWT_USER:", JWT_USER);
+=======
+
+>>>>>>> fe41d16 (resolve all issue)
 
 module.exports = {
     JWT_USER,

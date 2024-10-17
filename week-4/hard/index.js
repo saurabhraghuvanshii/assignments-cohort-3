@@ -28,12 +28,18 @@ dotenv.config();
 =======
 >>>>>>> eb9ff86 (check for undefined)
 
+<<<<<<< HEAD
 //console.log(process.env.moongose_url)
 
 
 =======
 
 >>>>>>> 0602141 (complete login)
+||||||| parent of fe41d16 (resolve all issue)
+//console.log(process.env.moongose_url)
+
+=======
+>>>>>>> fe41d16 (resolve all issue)
 const UserRouter = require('./routes/user');
 const todoRouter = require('./routes/todo');
 ||||||| parent of c556ad3 (week4 assgnment done but not hard one)
@@ -87,7 +93,7 @@ app.use("/todo", todoRouter);
 
 async function main() {
     await mongoose.connect(process.env.moongose_url)
-    app.listen(process.env.PORT);
+    app.listen(3000);
 }
 
 main()
