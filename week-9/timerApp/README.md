@@ -23,11 +23,11 @@ Build a simple timer app with start, pause, reset, and editable time functionali
    - Ensure inputs are limited to two digits (hours, minutes, seconds).
 
 ### 5. **Controls**
-   - Provide buttons for:
+   - Provide buttons for: 
      - Starting/pausing the timer.
      - Resetting the timer.
 
----
+--- 
 
 ## Core Functions:
 

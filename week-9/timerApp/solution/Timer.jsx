@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from "./Timer.module.css"
 import { formatTime, calculateTime } from '../utils/auxiliaryFunctions';
-
+ 
 const Timer = () => {
   // States to manage time, initial time, running status, and editing fields with values
   const [time, setTime] = useState(0); // Current time in seconds
