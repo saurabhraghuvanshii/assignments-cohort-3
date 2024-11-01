@@ -15,3 +15,4 @@ export const calculateTime = (hours, minutes, seconds) => {
 
     return isNaN(calculatedTime) ? 0 : calculatedTime; // Return 0 if any value is NaN
 }
+  
