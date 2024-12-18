@@ -59,7 +59,6 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 			validateEmail(formData.email) &&
 			validatePhone(formData.phone);
 
-<<<<<<< HEAD
 		if (!isFormValid) {
 			setErrors({
 				petName: validateName(formData.petName)
@@ -78,31 +77,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 			});
 			return;
 		}
-||||||| parent of 8e2c772 (done)
-    if (!isFormValid) {
-      setErrors({
-        petName: validateName(formData.petName) ? '' : 'Must be at least 3 characters long.',
-        breed: validateName(formData.breed) ? '' : 'Must be at least 3 characters long.',
-        yourName: validateName(formData.yourName) ? '' : 'Must be at least 3 characters long.',
-        email: validateEmail(formData.email) ? '' : 'Enter a valid email address.',
-        phone: validatePhone(formData.phone) ? '' : 'Enter a valid 10-digit phone number.',
-      });
-      return; // Prevent submission if form is invalid
-    }
-=======
-    if (!isFormValid) {
-        setErrors({
-          petName: validateName(formData.petName) ? '' : 'Must be at least 3 characters long.',
-          breed: validateName(formData.breed) ? '' : 'Must be at least 3 characters long.',
-          yourName: validateName(formData.yourName) ? '' : 'Must be at least 3 characters long.',
-          email: validateEmail(formData.email) ? '' : 'Enter a valid email address.',
-          phone: validatePhone(formData.phone) ? '' : 'Enter a valid 10-digit phone number.',
-        });
-        return; 
-    }
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 		setSubmissions((prev) => [...prev, formData]);
 
 		setFormData({
@@ -115,36 +90,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 		});
 		navigate("/table");
 	};
-||||||| parent of 8e2c772 (done)
-    setSubmissions((prev) => [...prev, formData]);
 
-    // Clear form data and navigate
-    setFormData({
-      petName: '',
-      petType: '',
-      breed: '',
-      yourName: '',
-      email: '',
-      phone: '',
-    });
-    navigate('/table'); // Redirect to the TableData route
-  };
-=======
-    setSubmissions((prev) => [...prev, formData]);
-    
-    setFormData({
-      petName: '',
-      petType: '',
-      breed: '',
-      yourName: '',
-      email: '',
-      phone: '',
-    });
-    navigate('/table');
-	};
->>>>>>> 8e2c772 (done)
-
-<<<<<<< HEAD
 	const formContainerStyle = {
 		display: "flex",
 		flexDirection: "column",
@@ -159,26 +105,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 		backdropFilter: "blur(5px)",
 		border: "1px solid rgba(255, 255, 255, 0.5)",
 	};
-||||||| parent of 8e2c772 (done)
-  // Styles
-  const formContainerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    borderRadius: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    padding: '20px',
-    maxWidth: '600px',
-    margin: '20px auto',
-    backdropFilter: 'blur(5px)',
-    border: '1px solid rgba(255, 255, 255, 0.5)',
-  };
-=======
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 	const inputStyle = {
 		width: "100%",
 		padding: "10px",
@@ -187,58 +114,14 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 		borderRadius: "5px",
 		fontSize: "16px",
 	};
-||||||| parent of 8e2c772 (done)
-  const inputStyle = {
-    width: '100%',
-    padding: '10px',
-    margin: '10px 0',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    fontSize: '16px',
-  };
-=======
-	const formContainerStyle = {
-		display: "flex",
-		flexDirection: "column",
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: "rgba(255, 255, 255, 0.5)",
-		borderRadius: "10px",
-		boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-		padding: "20px",
-		maxWidth: "600px",
-		margin: "20px auto",
-		backdropFilter: "blur(5px)",
-		border: "1px solid rgba(255, 255, 255, 0.5)",
-	};
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 	const labelStyle = {
 		fontWeight: "bold",
 		marginBottom: "5px",
 		textAlign: "left",
 		width: "100%",
 	};
-||||||| parent of 8e2c772 (done)
-  const labelStyle = {
-    fontWeight: 'bold',
-    marginBottom: '5px',
-    textAlign: 'left',
-    width: '100%',
-  };
-=======
-	const inputStyle = {
-		width: "100%",
-		padding: "10px",
-		margin: "10px 0",
-		border: "1px solid #ccc",
-		borderRadius: "5px",
-		fontSize: "16px",
-	};
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 	const buttonStyle = {
 		backgroundColor: "#4CAF50",
 		color: "white",
@@ -251,56 +134,13 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 		width: "100%",
 		maxWidth: "200px",
 	};
-||||||| parent of 8e2c772 (done)
-  const buttonStyle = {
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    padding: '10px 15px',
-    border: 'none',
-    borderRadius: '5px',
-    fontSize: '16px',
-    cursor: 'pointer',
-    marginTop: '10px',
-    width: '100%',
-    maxWidth: '200px',
-  };
-=======
-	const labelStyle = {
-		fontWeight: "bold",
-		marginBottom: "5px",
-		textAlign: "left",
-		width: "100%",
-	};
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 	const errorStyle = {
 		color: "red",
 		fontSize: "12px",
 		marginBottom: "5px",
 	};
-||||||| parent of 8e2c772 (done)
-  const errorStyle = {
-    color: 'red',
-    fontSize: '12px',
-    marginBottom: '5px',
-  };
-=======
-	const buttonStyle = {
-		backgroundColor: "#4CAF50",
-		color: "white",
-		padding: "10px 15px",
-		border: "none",
-		borderRadius: "5px",
-		fontSize: "16px",
-		cursor: "pointer",
-		marginTop: "10px",
-		width: "100%",
-		maxWidth: "200px",
-	};
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 	return (
 		<div>
 			<div style={formContainerStyle}>
@@ -316,31 +156,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 						style={inputStyle}
 					/>
 					{errors.petName && <div style={errorStyle}>{errors.petName}</div>}
-||||||| parent of 8e2c772 (done)
-  return (
-    <div>
-      <div style={formContainerStyle}>
-        <h2>Pet Adoption Form</h2>
-        <form onSubmit={handleSubmit} style={{ width: '100%' }}>
-          <label style={labelStyle}>Pet Name</label>
-          <input
-            type="text"
-            name="petName"
-            value={formData.petName}
-            onChange={handleChange}
-            placeholder="Pet Name"
-            style={inputStyle}
-          />
-          {errors.petName && <div style={errorStyle}>{errors.petName}</div>}
-=======
-	const errorStyle = {
-		color: "red",
-		fontSize: "12px",
-		marginBottom: "5px",
-	};
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 					<label style={labelStyle}>Pet Type</label>
 					<input
 						type="text"
@@ -350,35 +166,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 						placeholder="Dog, Cat, etc."
 						style={inputStyle}
 					/>
-||||||| parent of 8e2c772 (done)
-          <label style={labelStyle}>Pet Type</label>
-          <input
-            type="text"
-            name="petType"
-            value={formData.petType}
-            onChange={handleChange}
-            placeholder="Dog, Cat, etc."
-            style={inputStyle}
-          />
-=======
-	return (
-		<div>
-			<div style={formContainerStyle}>
-				<h2>Pet Adoption Form</h2>
-				<form onSubmit={handleSubmit} style={{ width: "100%" }}>
-					<label style={labelStyle}>Pet Name</label>
-					<input
-						type="text"
-						name="petName"
-						value={formData.petName}
-						onChange={handleChange}
-						placeholder="Pet Name"
-						style={inputStyle}
-					/>
-					{errors.petName && <div style={errorStyle}>{errors.petName}</div>}
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 					<label style={labelStyle}>Breed</label>
 					<input
 						type="text"
@@ -389,30 +177,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 						style={inputStyle}
 					/>
 					{errors.breed && <div style={errorStyle}>{errors.breed}</div>}
-||||||| parent of 8e2c772 (done)
-          <label style={labelStyle}>Breed</label>
-          <input
-            type="text"
-            name="breed"
-            value={formData.breed}
-            onChange={handleChange}
-            placeholder="Breed"
-            style={inputStyle}
-          />
-          {errors.breed && <div style={errorStyle}>{errors.breed}</div>}
-=======
-					<label style={labelStyle}>Pet Type</label>
-					<input
-						type="text"
-						name="petType"
-						value={formData.petType}
-						onChange={handleChange}
-						placeholder="Dog, Cat, etc."
-						style={inputStyle}
-					/>
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 					<label style={labelStyle}>Your Name</label>
 					<input
 						type="text"
@@ -423,31 +188,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 						style={inputStyle}
 					/>
 					{errors.yourName && <div style={errorStyle}>{errors.yourName}</div>}
-||||||| parent of 8e2c772 (done)
-          <label style={labelStyle}>Your Name</label>
-          <input
-            type="text"
-            name="yourName"
-            value={formData.yourName}
-            onChange={handleChange}
-            placeholder="Your Name"
-            style={inputStyle}
-          />
-          {errors.yourName && <div style={errorStyle}>{errors.yourName}</div>}
-=======
-					<label style={labelStyle}>Breed</label>
-					<input
-						type="text"
-						name="breed"
-						value={formData.breed}
-						onChange={handleChange}
-						placeholder="Breed"
-						style={inputStyle}
-					/>
-					{errors.breed && <div style={errorStyle}>{errors.breed}</div>}
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
 					<label style={labelStyle}>Email</label>
 					<input
 						type="email"
@@ -458,86 +199,7 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 						style={inputStyle}
 					/>
 					{errors.email && <div style={errorStyle}>{errors.email}</div>}
-||||||| parent of 8e2c772 (done)
-          <label style={labelStyle}>Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email"
-            style={inputStyle}
-          />
-          {errors.email && <div style={errorStyle}>{errors.email}</div>}
-=======
-					<label style={labelStyle}>Your Name</label>
-					<input
-						type="text"
-						name="yourName"
-						value={formData.yourName}
-						onChange={handleChange}
-						placeholder="Your Name"
-						style={inputStyle}
-					/>
-					{errors.yourName && <div style={errorStyle}>{errors.yourName}</div>}
->>>>>>> 8e2c772 (done)
 
-<<<<<<< HEAD
-					<label style={labelStyle}>Phone Number</label>
-					<input
-						type="text"
-						name="phone"
-						value={formData.phone}
-						onChange={handleChange}
-						placeholder="10-digit Phone Number"
-						style={inputStyle}
-					/>
-					{errors.phone && <div style={errorStyle}>{errors.phone}</div>}
-||||||| parent of 8e2c772 (done)
-          <label style={labelStyle}>Phone Number</label>
-          <input
-            type="text"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="10-digit Phone Number"
-            style={inputStyle}
-          />
-          {errors.phone && <div style={errorStyle}>{errors.phone}</div>}
-=======
-					<label style={labelStyle}>Email</label>
-					<input
-						type="email"
-						name="email"
-						value={formData.email}
-						onChange={handleChange}
-						placeholder="Email"
-						style={inputStyle}
-					/>
-					{errors.email && <div style={errorStyle}>{errors.email}</div>}
->>>>>>> 8e2c772 (done)
-
-<<<<<<< HEAD
-					<div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-						<button type="submit" style={buttonStyle}>
-							Submit
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	);
-||||||| parent of 8e2c772 (done)
-          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <button type="submit" style={buttonStyle}>
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-=======
 					<label style={labelStyle}>Phone Number</label>
 					<input
 						type="text"
@@ -558,7 +220,6 @@ const PetAdoptionForm = ({ setSubmissions }) => {
 			</div>
 		</div>
 	);
->>>>>>> 8e2c772 (done)
 };
 
 export default PetAdoptionForm;
