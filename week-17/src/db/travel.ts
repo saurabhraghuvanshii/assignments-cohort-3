@@ -7,7 +7,7 @@ interface TravelPlan {
   end_date: string;
   budget: number;
 }
-
+ 
 import { client } from "..";
 import { QueryResult } from "pg";
 
@@ -33,7 +33,13 @@ export async function createTravelPlan(
   endDate: string,
   budget: number
 ) {
-  
+  const insertquery = `INSERT INTO travel_plans (userId, title,
+  destnationCity, destinationCountry, startDate, endDate, budget)
+  VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *;`;
+
+  const response = await client.query(insertquery, [userId, title, destinationCity, destinationCountry, startDate, endDate, budget])
+
+  return response.rows[0]
 }
 
 /*
@@ -45,7 +51,9 @@ export async function updateTravelPlan(
   title?: string,
   budget?: number
 ) {
- 
+  const insertquery = `UPDATE travel_plans SET title = COALESCE($2, title), budget = COALESCE($3, budget) WHERE id = $1 RETURNING *;`
+  const result = await client.query(insertquery, [planId, title, budget]);
+  return result.rows[0];
 }
 
 /*

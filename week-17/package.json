@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
-    "start": "node dist/index.js",
+    "start": "zznode dist/index.js",
     "test": "jest"
   },
   "keywords": [],
